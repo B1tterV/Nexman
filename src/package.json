@@ -1,0 +1,26 @@
+{
+  "name": "nexman",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/eslint": "^1.10.0",
+    "@nuxt/image": "^2.0.0",
+    "gsap": "^3.13.0",
+    "nuxt": "^3.20.1",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@vue/compiler-sfc": "^3.5.0",
+    "nuxt-svgo": "^4.2.6",
+    "sass": "^1.94.2",
+    "typescript": "^5.5.0"
+  }
+}
