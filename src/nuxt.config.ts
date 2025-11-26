@@ -99,17 +99,6 @@ export default defineNuxtConfig({
     },
   },
 
-  typescript: {
-    typeCheck: true,
-    strict: true,
-    tsConfig: {
-      compilerOptions: {
-        strict: true,
-        types: ['node', 'nuxt']
-      }
-    }
-  },
-
   svgo: {
     global: false,
   },
