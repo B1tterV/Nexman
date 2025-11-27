@@ -1,0 +1,58 @@
+@use "../themes/light.scss" as *;
+
+@mixin scroll {
+  @supports (-webkit-appearance: none) {
+    // WebKit (Chrome, Safari, etc.)
+    &::-webkit-scrollbar {
+      width: 6px;
+      height: 100px;
+      border-radius: 32px;
+    }
+    &::-webkit-scrollbar:horizontal {
+      height: 6px;
+      width: 100px;
+      border-radius: 32px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: none;
+      border-radius: 32px;
+      margin-right: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      cursor: pointer;
+      background-color: var(--scroll-thumb);
+      border-radius: 32px;
+      width: 6px;
+      height: 100px;
+      outline: none;
+      &:hover {
+        background: var(--scroll-thumb-hover);
+      }
+    }
+    &::-webkit-scrollbar-thumb:horizontal {
+      cursor: pointer;
+      background-color: var(--scroll-thumb);
+      border-radius: 32px;
+      height: 6px;
+      width: 100px;
+      outline: none;
+      &:hover {
+        background: var(--scroll-thumb-hover);
+      }
+    }
+  }
+
+  @supports (scrollbar-width: thin) and (not (-webkit-appearance: none)) {
+    // Стили для Firefox
+    scrollbar-width: thin;
+    scrollbar-color: var(--scroll-thumb-hover) var(--scroll-thumb);
+  }
+
+  -ms-overflow-style: none;
+}
+
+body {
+  @include scroll;
+}

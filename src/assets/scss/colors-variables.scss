@@ -1,0 +1,37 @@
+/**
+* Инструкция:
+* 1) для всех названий добавляем префикс light- или dark- в зависимости от той темы, где они используются;
+* 2) цвет копируем в RGBA
+* 3) если для цвета есть в файле стэйтов цвета для ховера и пресседа - добавляем их ниже, например, будет такой блок
+* $light-text-primary: rgba(34, 33, 30, 1);
+* $light-text-primary-hover: rgba(98, 96, 89, 1);
+* $light-text-primary-press: rgba(121, 118, 110, 1);
+* 4) после такого блока (с ховерами и пресседами) пропускаем строку, чтобы визуально их отделить;
+*/
+
+// text
+$light-text-primary: rgba(28, 29, 33, 1);
+$light-text-primary-80p: rgba(28, 29, 33, 0.8);
+$light-text-reverse: rgba(255, 255, 255, 1);
+$light-text-reverse-80p: rgba(255, 255, 255, 0.8);
+
+// backgrounds
+$light-blue-bg: rgba(147, 178, 219, 1);
+$light-gray-bg: rgba(28, 29, 33, 0.06);
+$light-blue-linear-bg: linear-gradient(
+    144deg,
+    #cdd9e9 0%, 
+    rgba(205, 217, 233, 0.2) 60%
+);
+$light-blue-radial-bg: radial-gradient(
+    209.23% 89.55% at 92.13% 90.12%, 
+    rgb(36, 96, 176) 0%, 
+    rgb(124, 169, 230) 98.77129197120667%
+);
+
+// scroll
+$light-thumb: rgba(0, 0, 0, 0.2);
+$light-thumb-hover: rgba(0, 0, 0, 0.34);
+
+// Additionals base colors
+$white: rgba(255, 255, 255, 1)

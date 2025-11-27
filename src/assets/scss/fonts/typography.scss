@@ -1,0 +1,97 @@
+// Имя: Inter - IT | TT_Norms - TN
+// Размер: p = percent (Например 160p = 160%) иначе px
+// Добавляем U если upercase
+// Добавляем LS если letter-spacing
+// Структура: NAME-SIZE-HEIGHT-WEIGHT-LS-(Если требуется)-U(Если требуется)
+// Обязательно добавляем в порядке понижения font-size для быстрого поиска
+
+
+@mixin IT-160-100p-500-LS-U {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 160px;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+@mixin IT-46-120p-600-LS-U {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+@mixin IT-38-130p-500-U {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin IT-32-100p-500-LS-U {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.06em;
+  text-transform: uppercase;
+}
+
+@mixin IT-30-130p-600-U {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin IT-26-130p-600-U {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin IT-20-120p-600-LS-U {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: -0.05em;
+}
+
+@mixin TN-18-130p-400 {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+@mixin IT-16-130p-600-U {
+  font-family: "Inter";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+
+@mixin TN-14-130p-400 {
+  font-family: "TT Norms";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+@mixin IT-10-100p-500-U {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 100%;
+  text-transform: uppercase;
+}

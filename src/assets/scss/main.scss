@@ -1,0 +1,8 @@
+@use "fonts/fonts.scss" as *;
+@use 'themes/light.scss' as *;
+@use 'base/reset.scss' as *;
+@use 'base/text-mixins.scss' as *;
+
+html {
+  min-width: 360px;
+}

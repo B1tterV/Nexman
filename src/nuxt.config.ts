@@ -35,15 +35,14 @@ export default defineNuxtConfig({
         {
           rel: "icon",
           type: "image/png",
-          sizes: "96x96",
-          href: "/favicon/favicon-96x96.png",
+          sizes: "32x32",
+          href: "/favicon/favicon-32x32.png",
         },
         {
           rel: "apple-touch-icon",
           sizes: "180x180",
           href: "/favicon/apple-touch-icon.png",
         },
-        { rel: "manifest", href: "/favicon/site.webmanifest" },
       ],
       meta: [
         { name: "mobile-web-app-capable", content: "yes" },
@@ -91,7 +90,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData: `
-            @use "~/assets/scss/base/index" as *;
+            @use "~/assets/scss/colors-variables.scss" as *;
             @use "~/assets/scss/base/basic-mixins.scss" as *;
           `,
         },

@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/TT_Norms/TT_Norms_Std_Trial_Condensed_Regular.otf") format("openType");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/Inter/Inter_Medium.ttf") format("trueType");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/Inter/Inter_SemiBold.ttf") format("trueType");
+}
+
+body {
+  font-family: "TT Norms", "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}

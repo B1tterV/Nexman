@@ -1,0 +1,22 @@
+@use "../colors-variables.scss" as *;
+
+:root {
+    // text
+    --text-primary: #{$light-text-primary};
+    --text-primary-80p: #{$light-text-primary-80p};
+    --text-reverse: #{$light-text-reverse};
+    --text-reverse-80p: #{$light-text-reverse-80p};
+
+    // backgrounds
+    --bg-blue: #{$light-blue-bg};
+    --bg-gray: #{$light-gray-bg};
+    --bg-blue-linear: #{$light-blue-linear-bg};
+    --bg-blue-radial: #{$light-blue-radial-bg};
+
+    // scroll
+    --scroll-thumb: #{$light-thumb};
+    --scroll-thumb-hover: #{$light-thumb-hover};
+
+    // base colors
+    --white: #{$white};
+}
